@@ -1,0 +1,242 @@
+* {
+  font-family: "Heebo", "Roboto";
+}
+
+.root {
+  font-family: "Heebo", "Roboto", sans-serif;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #0a070e;
+  color: #fff;
+}
+
+.header {
+  background-image: url(../../assets/img/Bar.jfif);
+  background-repeat: no-repeat;
+  background-position: -50px -125px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+}
+
+.headerLeft {
+  font-family: "Heebo", "Roboto";
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.headerLeft h4 {
+  font-weight: 700;
+}
+
+.headerRight {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.headerRight button {
+  font-family: "Heebo", "Roboto";
+  width: 110px;
+  height: 35px;
+  border-radius: 1000px;
+  background-color: #4c5059;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  width: 200px;
+}
+
+.footerbar {
+  font-family: "Heebo", "Roboto";
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.footerbar p {
+  padding-left: 20px;
+  display: inline;
+}
+
+.footerLeft {
+  font-family: "Heebo", "Roboto";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.footerLeft h1 {
+  font-weight: 1000;
+}
+
+.footerLeft h5 {
+  color: grey;
+}
+
+.footerLeft h1, h5 {
+  display: inline;
+}
+
+.bg-txt {
+  margin-top: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 75px;
+  font-weight: 700;
+  font-family: "Heebo", "Montserrat", sans-serif;
+}
+
+.bg-sub-txt {
+  margin-top: 70px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  color: #fff;
+  font-size: 20px;
+  font-family: "Heebo", "Montserrat", sans-serif;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.sectionAwal {
+  background-color: #0a070e;
+  color: #fff;
+}
+
+.bagianLive {
+  text-align: left;
+  padding-left: 15%;
+}
+
+.live {
+  color: #841c3f;
+  text-shadow: 2px #841c3f;
+  font-weight: 700;
+}
+
+.bagianLive h3 {
+  font-weight: 500;
+}
+
+.bagianLive p {
+  color: #66666a;
+}
+
+/* Explore
+.sectionDua {
+  background: #111111;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/41114/plan1.png");
+  background-size: cover;
+}
+
+.frame {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/41114/plan1.png");
+  border-radius: 3px;
+  box-shadow: 0 0 50px black;
+  height: 698px;
+  left: 50%;
+  margin-bottom: 300px;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 550px;
+}
+
+img {
+  position: absolute;
+  transform-origin: 50%;
+  width: 100%;
+  transition: 2s ease;
+}
+
+.frame:hover .pic1 {
+  transform: scale(1.2);
+  -webkit-filter: blur(4px);
+}
+
+.frame:hover .pic2 {
+  transform: scale(1.4);
+  -webkit-filter: blur(2px);
+}
+
+.frame:hover .pic3 {
+  transform: scale(1.6);
+  -webkit-filter: blur(1px);
+}
+
+.frame:hover .pic4 {
+  transform: scale(1.8);
+}
+
+.frame:hover .pic5 {
+  transform: scale(2);
+}
+
+.frame:hover .mist {
+  transform: translateX(-100%);
+}
+
+.frame:hover .mist2 {
+  transform: translateX(100%);
+}
+
+.mist {
+  height: 200px;
+  position: absolute;
+  top: 500px;
+  width: 2000px;
+  -webkit-filter: blur(2px);
+  transition: 60s linear;
+}
+
+.mist2 {
+  height: 200px;
+  position: absolute;
+  top: 300px;
+  left: -100%;
+  width: 2000px;
+  -webkit-filter: blur(2px);
+  transition: 60s linear;
+  background-color: #0a070e;
+}*/
+
+/* About Us */
+.sectionTiga {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btnAbout {
+  font-size: 24px;
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+
+.btnAbout:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Admin */
+.sectionEmpat {
+  background-color: #0a070e;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}

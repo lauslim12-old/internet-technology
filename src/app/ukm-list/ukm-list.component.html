@@ -1,0 +1,63 @@
+<section>
+    <h2 class="text-center title">DAFTAR UKM</h2>
+    <div class="pertengahan text-center">
+        <button id="buttonDESC" (click)="getDataUKMSorted()" class="descending">Sorting Descending</button>
+        <button id="buttonASC" (click)="getDataUKMNormal()" class="ascending">Sorting Ascending</button>
+        <input class="center" type="text" name="search" placeholder="Cari UKM...." [(ngModel)]='searching' #ctrl="ngModel" />
+    </div>
+
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <div class="table100">
+
+                    <table>
+                        <thead>
+                            <tr class="table100-head">
+                                <th class="column1">Nomor</th>
+                                <th class="column2">Kode</th>
+                                <th class="column3">Nama UKM</th>
+                                <th class="column4">Anggota</th>
+                                <th class="column5">Detail</th>
+                                <th class="column6" *ngIf="isLoggedIn()">Favorite</th>
+                            </tr>
+                        </thead>
+
+                        <tbody *ngIf="searching == null || searching == ''">
+                            <tr *ngFor="let kegiatan of ukm?.result.ukm">
+                                <td class="column1">{{ kegiatan.id }}</td>
+                                <td class="column2">{{ kegiatan.kode }}</td>
+                                <td class="column3">{{ kegiatan.nama }}</td>
+                                <td class="column4">{{ kegiatan.anggota }}</td>
+                                <td class="column5"><button id="buttonDetail" routerLink="./{{kegiatan.kode}}">View
+                                        Detail</button></td>
+                                <td class="column6" *ngIf="isLoggedIn()"><button id="buttonFavorite" (click)="addtoFav(kegiatan.kode)">Add
+                                        to Favorite</button></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody *ngFor="let kegiatan of ukm?.result.ukm">
+                            <tr
+                                *ngIf="kegiatan.nama.toLowerCase().includes(searching.toLowerCase()) && searching != null && searching != '' && searching != undefined">
+                                <td class="column1">{{ kegiatan.id }}</td>
+                                <td class="column2">{{ kegiatan.kode }}</td>
+                                <td class="column3">{{ kegiatan.nama }}</td>
+                                <td class="column4">{{ kegiatan.anggota }}</td>
+                                <td class="column5"><button id="buttonDetail" routerLink="./{{kegiatan.kode}}">View
+                                        Detail</button></td>
+                                <td class="column6" *ngIf="isLoggedIn()"><button (click)="addtoFav(kegiatan.kode)">Add to Favorite</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
+                        <mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+                    </mat-card>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

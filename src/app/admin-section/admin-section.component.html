@@ -1,0 +1,66 @@
+<h3 class="text-center">Update UKM + Add UKM Khusus Admin</h3>
+
+<form [formGroup]="updateForm">
+      <label>Kode</label>
+      <input type="text" formControlName="kode" name="kode">
+      <br>
+
+      <label>Nama</label>
+      <input type="text" formControlName="nama" name="nama">
+      <br>
+
+      <label>Anggota</label>
+      <input type="text" formControlName="anggota" name="anggota">
+      <br>
+
+      <label>Foto</label>
+      <input type="text" formControlName="foto" name="foto">
+      <br>
+
+      <label>Deskripsi</label>
+      <input type="text" formControlName="deskripsi" name="deskripsi">
+      <br>
+
+      <label>Jam Mulai</label>
+      <input type="text" formControlName="mulai" name="mulai">
+      <br>
+
+      <label>Jam Selesai</label>
+      <input type="text" formControlName="selesai" name="selesai">
+      <br>
+
+      <button (click)="updateUKM()">Update UKM</button>
+</form>
+
+<h3>Tambah UKM Khusus Admin</h3>
+<form [formGroup]="addUKMForm">
+      <label>Kode</label>
+      <input type="text" formControlName="kode" name="kode">
+      <br>
+
+      <label>Nama</label>
+      <input type="text" formControlName="nama" name="nama">
+      <br>
+
+      <label>Anggota</label>
+      <input type="text" formControlName="anggota" name="anggota">
+      <br>
+
+      <label>Foto</label>
+      <input type="text" formControlName="foto" name="foto">
+      <br>
+
+      <label>Deskripsi</label>
+      <input type="text" formControlName="deskripsi" name="deskripsi">
+      <br>
+
+      <label>Jam Mulai</label>
+      <input type="text" formControlName="mulai" name="mulai">
+      <br>
+
+      <label>Jam Selesai</label>
+      <input type="text" formControlName="selesai" name="selesai">
+      <br>
+
+      <button (click)="addUKM()">Add UKM</button>
+</form>

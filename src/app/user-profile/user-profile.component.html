@@ -1,0 +1,129 @@
+<div class="bg">
+  <h2 class="text-center title">User Profile</h2>
+  <div class="card">
+    <div class="our-user">
+      <div class="picture">
+        <img class="img-fluid" src="{{user?.foto}}">
+      </div>
+      <div class="user-content">
+        <mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
+          <mat-progress-spinner color="warn" mode="indeterminate"></mat-progress-spinner>
+        </mat-card>
+
+        <h1 class="nama">{{ user?.nama_lengkap }}</h1>
+        <p class="alamat">{{ user?.alamat }}</p>
+        <h4 class="email">{{ user?.email }}</h4>
+        <h5 class="ttl">{{ user?.tanggal_lahir }}</h5>
+        <button routerLink="/favorites" class="btn btn-info">Favorite</button>
+        <button (click)="logout()" class="btn btn-info" routerLink="/">Logout</button>
+        <button data-toggle="modal" class="btn btn-info" data-target="#updateModal">Update</button>
+      </div>
+
+      <ul class="social">
+        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+        </li>
+        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Profile Update</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container-update">
+            <form [formGroup]="regForm" novalidate>
+              <span class="form-title">
+                Update Profile!
+              </span>
+
+              <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" class="form-control" formControlName="nama_lengkap" name="nama_lengkap"
+                  value="{{user?.nama_lengkap}}">
+              </div>
+
+              <div class="form-group">
+                <label>Alamat</label>
+                <input type="text" class="form-control" formControlName="alamat" name="alamat" value="{{user?.alamat}}">
+              </div>
+
+              <div class="form-group">
+                <label>Tanggal Lahir</label>
+                <input type="text" class="form-control" formControlName="tanggal_lahir" name="tanggal_lahir"
+                  value="{{user?.tanggal_lahir}}">
+              </div>
+
+              <div class="form-group">
+                <label>Foto</label>
+                <input type="text" class="form-control" formControlName="foto" name="foto"
+                  placeholder="Silakan diganti dengan link...">
+              </div>
+
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" formControlName="password" name="password"
+                  placeholder="Password...">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="updateProfile()" data-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 
+<div class="container-update">
+    <form [formGroup]="regForm" novalidate>
+        <span class="form-title">
+            Update Profile!
+        </span>
+
+        <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" class="form-control" formControlName="nama_lengkap" name="nama_lengkap">
+        </div>
+
+        <div class="form-group">
+            <label>Alamat</label>
+            <input type="text" class="form-control" formControlName="alamat" name="alamat">
+        </div>
+
+        <div class="form-group">
+            <label>Tanggal Lahir</label>
+            <input type="text" class="form-control" formControlName="tanggal_lahir" name="tanggal_lahir">
+        </div>
+
+        <div class="form-group">
+            <label>Foto</label>
+            <input type="text" class="form-control" formControlName="foto" name="foto">
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" name="password">
+        </div>
+
+        <button (click)="updateProfile()" class="btn">Submit</button>
+
+    </form>
+</div>
+-->

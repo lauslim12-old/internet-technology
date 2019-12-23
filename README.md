@@ -1,4 +1,4 @@
-# Introduction to Internet Technology (Student's Activities Website)
+# Introduction to Internet Technology (UKM Website)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 My final project for Introduction to Internet Technology course in my university. The whole repository is coded with HTML, CSS, JavaScript and its variants (jQuery, Javascript Object Notation or JSON), and Angular.
 

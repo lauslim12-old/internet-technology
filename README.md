@@ -14,6 +14,10 @@ My final project for Introduction to Internet Technology course in my university
 * Fully Interactive Design (Keyframes, Animations, etc.)
 * Object Oriented Programming
 * JSON
+* Angular 8
+
+## Disclaimer
+All of the images was gathered at `unsplash.com` and `pexels.com`, both are free photo-sharing websites. All of the images there are free to use for commerical or educational usage.
 
 # Contribution
 If you have any ideas for a design or an algorithm regarding these websites, feel free to post a pull request.

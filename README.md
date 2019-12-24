@@ -23,7 +23,7 @@ All of the images was gathered at `unsplash.com` and `pexels.com`, both are free
 If you have any ideas for a design or an algorithm regarding these websites, feel free to post a pull request.
 
 ## Development Server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use `npm i` to install the node modules for this website. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code Scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

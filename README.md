@@ -8,6 +8,7 @@ My final project for Introduction to Internet Technology course in my university
 * Usage of coding concepts like Object Oriented Programming, and Functions.
 * Coded in a Windows 64-bit environment.
 * Coded in Indonesian - some with English.
+* The API is from this website: https://umn-pti2019.herokuapp.com.
 
 ## Concepts
 * Reseponsive Web Design

@@ -1,6 +1,9 @@
 # Introduction to Internet Technology (UKM Website)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
-My final project for Introduction to Internet Technology course in my university. The whole repository is coded with HTML, CSS, JavaScript and its variants (jQuery, containsJavascript Object Notation or JSON), and Angular.
+My final project for Introduction to Internet Technology course in my university. Programmed with Angular 8, this project is designed to make API calls and display them in the form of a web page.
+
+## Notes
+* As this project is generated with Angular 8, as of the time I'm updating this (28/07/2020), I believe it has security vulnerabilities (from Angular itself) that I cannot be bothered to fix, as I have to update this to Angular 10. Please be sure and only use this for educational purposes and not in production!
 
 ## Architecture & Philosophies
 * HTML, CSS, JavaScript, jQuery, JSON, and Angular.
@@ -20,7 +23,7 @@ My final project for Introduction to Internet Technology course in my university
 ## Disclaimer
 All of the images was gathered at `unsplash.com` and `pexels.com`, both are free photo-sharing websites. All of the images there are free to use for commerical or educational usage.
 
-# Contribution
+## Contribution
 If you have any ideas for a design or an algorithm regarding these websites, feel free to post a pull request.
 
 ## Development Server
